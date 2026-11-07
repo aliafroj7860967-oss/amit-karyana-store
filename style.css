@@ -24,6 +24,10 @@ body {
   font-family: "Poppins", "Baloo 2", sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .topbar {
   position: sticky;
   top: 0;
@@ -55,6 +59,10 @@ nav {
 }
 
 nav a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 8px 4px;
   color: white;
   font-size: 14px;
   text-decoration: none;
@@ -67,6 +75,7 @@ nav a:hover {
 .order-button,
 .hero-button {
   display: inline-block;
+  min-height: 44px;
   padding: 11px 18px;
   border-radius: 999px;
   background: var(--orange);
@@ -159,11 +168,14 @@ nav a:hover {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  max-width: 1440px;
+  gap: clamp(13px, 2vw, 22px);
+  margin: 0 auto;
 }
 
 .product-card {
+  min-width: 0;
   overflow: hidden;
   border: 1px solid #e9eddc;
   border-radius: 18px;
@@ -180,6 +192,7 @@ nav a:hover {
 .product-card summary {
   cursor: pointer;
   list-style: none;
+  touch-action: manipulation;
 }
 
 .product-card summary::-webkit-details-marker {
@@ -211,6 +224,7 @@ nav a:hover {
 
 .product-card-heading {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
@@ -221,6 +235,7 @@ nav a:hover {
   color: #07945c;
   font-size: 12px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .product-toggle::after {
@@ -296,6 +311,7 @@ footer {
   .topbar {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 8px 18px;
   }
 
   nav {
@@ -304,32 +320,54 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
   }
+}
 
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    min-height: 0;
+    padding: 48px 7%;
+  }
+
+  .hero-image img {
+    height: clamp(210px, 56vw, 340px);
   }
 }
 
 @media (max-width: 600px) {
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 50px 7%;
+  .topbar {
+    padding: 12px 5%;
   }
 
-  .hero-image img {
-    height: 240px;
+  nav {
+    gap: 4px 12px;
+  }
+
+  .order-button,
+  .hero-button {
+    padding: 11px 16px;
+  }
+
+  .hero {
+    padding: 40px 6%;
   }
 
   .products-section {
-    padding: 50px 6%;
+    padding: 45px 6%;
+  }
+
+  .section-heading {
+    margin-bottom: 26px;
   }
 
   .product-grid {
-    gap: 13px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 16px;
   }
 
   .product-card img {
-    height: 130px;
+    height: clamp(155px, 48vw, 220px);
   }
 
   .product-card div {
@@ -341,18 +379,52 @@ footer {
   }
 
   .product-card ul {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .about {
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: stretch;
     margin: 0 6% 50px;
-    padding: 23px;
+    padding: 22px;
   }
 
   .about-icon {
-    flex-basis: 58px;
+    flex-basis: auto;
     height: 58px;
+    width: 58px;
     font-size: 30px;
+  }
+
+  .contact {
+    padding: 45px 6%;
+  }
+}
+
+@media (max-width: 380px) {
+  .topbar {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  nav {
+    gap: 2px 8px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .products-section {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .product-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
