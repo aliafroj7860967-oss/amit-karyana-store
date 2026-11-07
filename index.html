@@ -9,7 +9,7 @@
 <body>
 
   <header class="topbar">
-    <a class="logo" href="#">🛒 Amit <span>Karyana</span></a>
+    <a class="logo" href="#home">🛒 Amit <span>Karyana</span></a>
     <nav>
       <a href="#home">Home</a>
       <a href="#products">Samaan</a>
@@ -41,54 +41,54 @@
       </div>
 
       <div class="product-grid">
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80" alt="Gehu ka aata">
-          <div><h3>Anaj aur aata</h3><ul><li>Gehu, aata aur multigrain aata</li><li>Maida, sooji aur besan</li><li>Daliya, poha aur murmura</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="rice-varieties.png" alt="Basmati, brown aur anya chawal ki varieties">
-          <div><h3>Chawal</h3><ul><li>Basmati aur regular chawal</li><li>Brown rice aur idli rice</li><li>Sabudana</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="dal-varieties.png" alt="Toor, moong, masoor aur anya daalon ki varieties">
-          <div><h3>Daal aur pulses</h3><ul><li>Toor, moong aur masoor daal</li><li>Chana daal aur urad daal</li><li>Rajma, chhole aur safed matar</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="mustard-oil.png" alt="Sarson ke phool aur mustard oil">
-          <div><h3>Tel aur ghee</h3><ul><li>Sarson, sunflower aur soyabean tel</li><li>Groundnut aur rice bran oil</li><li>Desi ghee aur vanaspati</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Chocolate sandwich biscuits aur cookies">
-          <div><h3>Bakery aur biscuits</h3><ul><li>Bread, pav aur bun</li><li>Oreo jaise chocolate cream biscuits</li><li>Rusk, cookies aur namkeen biscuits</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="dairy-products.png" alt="Doodh, dahi, chhaachh aur ande">
-          <div><h3>Dairy aur eggs</h3><ul><li>Doodh</li><li>Dahi</li><li>Chhaachh</li><li>Eggs</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="snacks-varieties.png" alt="Chips, namkeen aur anya snacks">
-          <div><h3>Snacks aur dry fruits</h3><ul><li>Chips, namkeen aur bhujiya</li><li>Chocolates, toffee aur chewing gum</li><li>Badam, kaju, kishmish aur moongfali</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="spices-varieties.png" alt="Haldi, mirch, dhaniya aur anya masale">
-          <div><h3>Masale aur cooking items</h3><ul><li>Haldi, mirch, dhaniya aur jeera</li><li>Garam masala aur sabut masale</li><li>Namak, hing, ajwain aur kasuri methi</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="chai-coffee.svg" alt="Chai patti aur coffee beans">
-          <div><h3>Chai, coffee aur drinks</h3><ul><li>Chai patti, green tea aur coffee</li><li>Cold drinks, juice aur sharbat</li><li>Packaged drinking water</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=600&q=80" alt="Ghar ki safai ka samaan">
-          <div><h3>Ghar ki safai</h3><ul><li>Detergent powder aur washing bar</li><li>Bartan soap, floor cleaner aur phenyl</li><li>Toilet cleaner, scrubber aur garbage bags</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="personal-care-products.png" alt="Sabun, shampoo, toothpaste aur personal care products">
-          <div><h3>Personal care</h3><ul><li>Lux, Lifebuoy aur Dove sabun</li><li>Clinic Plus, Sunsilk aur Head &amp; Shoulders shampoo</li><li>Toothpaste, face wash, cream aur hair oil</li></ul></div>
-        </article>
-        <article class="product-card">
-          <img src="baby-care.svg" alt="Baby diaper aur baby care products">
-          <div><h3>Baby care</h3><ul><li>Baby diapers aur wipes</li><li>Baby soap, shampoo aur lotion</li><li>Baby powder aur feeding accessories</li></ul></div>
-        </article>
+        <details class="product-card">
+          <summary><img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80" alt="Gehu ka aata"><div class="product-card-heading"><h3>Anaj aur aata</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Gehu, aata aur multigrain aata</li><li>Maida, sooji aur besan</li><li>Daliya, poha aur murmura</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="rice-varieties.png" alt="Basmati, brown aur anya chawal ki varieties"><div class="product-card-heading"><h3>Chawal</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Basmati aur regular chawal</li><li>Brown rice aur idli rice</li><li>Sabudana</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="dal-varieties.png" alt="Toor, moong, masoor aur anya daalon ki varieties"><div class="product-card-heading"><h3>Daal aur pulses</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Toor, moong aur masoor daal</li><li>Chana daal aur urad daal</li><li>Rajma, chhole aur safed matar</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="mustard-oil.png" alt="Sarson ke phool aur mustard oil"><div class="product-card-heading"><h3>Tel aur ghee</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Sarson, sunflower aur soyabean tel</li><li>Groundnut aur rice bran oil</li><li>Desi ghee aur vanaspati</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Chocolate sandwich biscuits aur cookies"><div class="product-card-heading"><h3>Bakery aur biscuits</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Bread, pav aur bun</li><li>Oreo jaise chocolate cream biscuits</li><li>Rusk, cookies aur namkeen biscuits</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="dairy-products.png" alt="Doodh, dahi, chhaachh aur ande"><div class="product-card-heading"><h3>Dairy aur eggs</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Doodh</li><li>Dahi</li><li>Chhaachh</li><li>Eggs</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="snacks-varieties.png" alt="Chips, namkeen aur anya snacks"><div class="product-card-heading"><h3>Snacks aur dry fruits</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Chips, namkeen aur bhujiya</li><li>Chocolates, toffee aur chewing gum</li><li>Badam, kaju, kishmish aur moongfali</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="spices-varieties.png" alt="Haldi, mirch, dhaniya aur anya masale"><div class="product-card-heading"><h3>Masale aur cooking items</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Haldi, mirch, dhaniya aur jeera</li><li>Garam masala aur sabut masale</li><li>Namak, hing, ajwain aur kasuri methi</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="chai-coffee.svg" alt="Chai patti aur coffee beans"><div class="product-card-heading"><h3>Chai, coffee aur drinks</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Chai patti, green tea aur coffee</li><li>Cold drinks, juice aur sharbat</li><li>Packaged drinking water</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=600&q=80" alt="Ghar ki safai ka samaan"><div class="product-card-heading"><h3>Ghar ki safai</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Detergent powder aur washing bar</li><li>Bartan soap, floor cleaner aur phenyl</li><li>Toilet cleaner, scrubber aur garbage bags</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="personal-care-products.png" alt="Sabun, shampoo, toothpaste aur personal care products"><div class="product-card-heading"><h3>Personal care</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Lux, Lifebuoy aur Dove sabun</li><li>Clinic Plus, Sunsilk aur Head &amp; Shoulders shampoo</li><li>Toothpaste, face wash, cream aur hair oil</li></ul>
+        </details>
+        <details class="product-card">
+          <summary><img src="baby-care.svg" alt="Baby diaper aur baby care products"><div class="product-card-heading"><h3>Baby care</h3><span class="product-toggle">Samaan dekhein</span></div></summary>
+          <ul><li>Baby diapers aur wipes</li><li>Baby soap, shampoo aur lotion</li><li>Baby powder aur feeding accessories</li></ul>
+        </details>
       </div>
     </section>
 
