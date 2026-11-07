@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-labelledby="title">
+  <title id="title">Tea leaves and coffee</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8efdc"/>
+      <stop offset="1" stop-color="#dcebd8"/>
+    </linearGradient>
+    <linearGradient id="tea-tin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#85b96b"/>
+      <stop offset="1" stop-color="#3d7548"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b5636"/>
+      <stop offset="1" stop-color="#4b2d21"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#background)"/>
+  <circle cx="72" cy="72" r="32" fill="#fff9e9" opacity=".8"/>
+  <path d="M75 82q-23-20-4-38 21 19 4 38zm8-3q3-28 29-26-2 26-29 26zm-12 8q-28 4-33-19 27-6 33 19z" fill="#568b53"/>
+  <path d="M82 88q27-29 43-42m-43 42L47 68" fill="none" stroke="#47764b" stroke-width="3"/>
+  <circle cx="520" cy="67" r="20" fill="#f3d9a8"/>
+  <path d="M514 67q6-10 12 0-6 10-12 0z" fill="#b78148"/>
+  <ellipse cx="300" cy="298" rx="210" ry="17" fill="#bdcdb6"/>
+  <path d="M116 132q0-12 13-12h145v140q0 17-17 17H133q-17 0-17-17z" fill="url(#tea-tin)"/>
+  <rect x="113" y="108" width="164" height="26" rx="8" fill="#d3ad69"/>
+  <rect x="132" y="165" width="126" height="73" rx="8" fill="#f7edcf"/>
+  <text x="195" y="195" fill="#3c6541" font-family="Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">CHAI PATTI</text>
+  <path d="M153 216q14-17 28 0-14 16-28 0zm35 0q14-17 28 0-14 16-28 0zm35 0q14-17 28 0-14 16-28 0z" fill="#66864b"/>
+  <path d="M361 151h132v109q0 16-16 16h-99q-17 0-17-16z" fill="url(#coffee)"/>
+  <path d="M493 172h21q31 0 31 30t-31 30h-21" fill="none" stroke="#70452e" stroke-width="15"/>
+  <ellipse cx="427" cy="151" rx="66" ry="15" fill="#bc8b53"/>
+  <ellipse cx="427" cy="151" rx="52" ry="9" fill="#6a412d"/>
+  <path d="M391 148q7-11 14 0-7 11-14 0zm25-2q7-11 14 0-7 11-14 0zm26 2q7-11 14 0-7 11-14 0zm-39 5q7-11 14 0-7 11-14 0zm28 0q7-11 14 0-7 11-14 0z" fill="#b87b42"/>
+  <path d="M367 178h119v70H367z" fill="#f2e3c9"/>
+  <text x="426" y="209" fill="#573b2c" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">COFFEE</text>
+  <text x="426" y="232" fill="#76563d" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">BEANS &amp; BREW</text>
+  <path d="M302 105q-12-20 1-30m14 30q-12-20 1-30" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+</svg>
